@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2x2 Grid</title>
+  <title>To-Do App Example</title>
   <style>
-    .holder{
-  display: grid;
-  grid-template-columns:repeat(2,1fr);
-  grid-template-rows: repeat(2,1fr);
-  width: 220px;  /* Adjusted width */
-  margin: auto;
-}
-   
-    .grid-item{
+    .holder {
+      display: grid;
+      grid-template-columns: repeat(2, 110px); /* Each column is 110px */
+      grid-template-rows: repeat(2, 110px); /* Each row is 110px */
+      gap: 10px; /* Space between items */
+      width: 240px; /* Total width to fit the 2 columns and gap */
+      height: 240px; /* Total height to fit the 2 rows and gap */
+      margin: auto;
+    }
+    
+    .grid-item {
       background-color: brown;
       text-align: center;
       font-size: 20px;
@@ -24,7 +26,7 @@
 </head> 
 <body>
 
-  <h1>2x2 Grid</h1>
+  <h1>To-Do App Example</h1>
   <div class="holder">
     <div class="grid-item">1</div>
     <div class="grid-item">2</div>
